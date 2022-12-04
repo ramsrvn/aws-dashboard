@@ -1,0 +1,22 @@
+.Buckets{
+    .title{
+        color: #000;
+    }
+    .default{
+        width: 60%;
+    }
+    .cardBox{
+        width: 60%;
+        .list-title{
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .bucket-list{
+            display: flex;
+            margin-top: 30px;
+        }
+        .btn{
+            margin-top: 40px;
+        }
+    }
+}

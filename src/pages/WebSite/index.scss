@@ -1,0 +1,23 @@
+.WebSite{
+  .title{
+      color: #000;
+  }
+  .cardContainer{
+    margin-top: 80px;
+    .ant-card{
+        margin: 0 auto;
+    }
+    .btn-box{
+        display: flex;
+        justify-content: space-around;
+        .right{
+           .uploadFolder{
+            margin-top: 40px;
+           }
+        }
+    }
+  }
+  ::v-deep .ant-modal-body{
+    padding-top: 40px;
+  }
+}
