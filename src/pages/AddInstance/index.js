@@ -3,6 +3,8 @@ import {  useNavigate } from 'react-router-dom';
 
 import "./index.scss";
 
+
+
 const Home = () => {
   const gridStyle = {
     width: "50%",
@@ -32,7 +34,16 @@ const Home = () => {
             <Card.Grid hoverable={false} style={gridStyle}>
               Z:ghi
             </Card.Grid>
+            <div className="button">
+             <Button type="primary" onClick={()=>navigate('/')}>Stop</Button>
+             
+             
+          <Button  type="primary" onClick={()=>navigate('/')}>Reboot</Button>
+          
+           <Button type="primary" onClick={()=>navigate('/')}>Terminate</Button>
+           </div>
           </Card>
+           
         </div>
       </div>
       <div>

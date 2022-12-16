@@ -42,9 +42,9 @@ const Login = () => {
           <Button type="primary" onClick={() => changeBox("login-cre")}>
             login with credential
           </Button>
-          <Button type="primary" onClick={toRegister}>
+         {/* <Button type="primary" onClick={toRegister}>
             sign up
-          </Button>
+          </Button> */}
         </div>
         <div className="login-box" ref={login}>
           <Form
@@ -54,7 +54,7 @@ const Login = () => {
           >
             <Form.Item
               name="email"
-              label="email"
+              label="AWS ACCESS KEY ID"
               rules={[
                 {
                   required: true,
@@ -62,11 +62,11 @@ const Login = () => {
                 },
               ]}
             >
-              <Input size="large" placeholder="email" />
+              <Input size="large" placeholder="AWS ACCESS KEY ID" />
             </Form.Item>
             <Form.Item
               name="password"
-              label="password"
+              label="AWS SECRET ACCESS KEY"
               rules={[
                 {
                   required: true,
@@ -74,7 +74,7 @@ const Login = () => {
                 },
               ]}
             >
-              <Input size="large" placeholder="place input password" />
+              <Input size="large" placeholder="Enter AWS SECRET ACCESS KEY" />
             </Form.Item>
             
 

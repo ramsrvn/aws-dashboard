@@ -57,7 +57,10 @@ const Instances = () => {
         <Tabs.TabPane tab="Create Default EC2 instance" key="1">
           <div className="default">
             <div className="content">
-              <Card title="EC2 Instance">
+            <Form.Item >
+                    <Button onClick={handleSubmit}>Create Default EC2 Instance</Button>
+                  </Form.Item>
+           {/*   <Card title="EC2 Instance">
                 <Card.Grid hoverable={false} style={gridStyle}>
                   ID:123456
                 </Card.Grid>
@@ -76,7 +79,8 @@ const Instances = () => {
                 <Card.Grid hoverable={false} style={gridStyle}>
                   Z:ghi
                 </Card.Grid>
-              </Card>
+                 
+              </Card> */}
             </div>
           </div>
         </Tabs.TabPane>
@@ -84,7 +88,7 @@ const Instances = () => {
           <Card style={{ width: 600 }}>
           <div className="manually">
             <div className="content">
-              <div className="for-title">EC2 Form</div>
+              <div className="for-title"></div>
               <Form
                 name="basic"
                 labelCol={{ span: 8 }}
@@ -94,7 +98,7 @@ const Instances = () => {
                 <Form.Item
                   label="Enter AMI ID"
                   name="ID"
-                  rules={[{ required: true, message: "Please input AMI ID!" }]}
+                  rules={[{ required: false, message: "Please input AMI ID!" }]}
                 >
                   <Input />
                 </Form.Item>
@@ -103,7 +107,7 @@ const Instances = () => {
                   label="Enter Instance Type"
                   name="Type"
                   rules={[
-                    { required: true, message: "Please input Instance Type!" },
+                    { required: false, message: "Please input Instance Type!" },
                   ]}
                 >
                   <Input />
@@ -113,7 +117,7 @@ const Instances = () => {
                   label="Security Group"
                   name="Group"
                   rules={[
-                    { required: true, message: "Please input Security Group!" },
+                    { required: false, message: "Please input Security Group!" },
                   ]}
                 >
                   <Input />

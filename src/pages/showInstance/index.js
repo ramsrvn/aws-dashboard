@@ -12,7 +12,7 @@ const ShowInstance = () => {
   return (
     <div className="home">
       <div className="default">
-        <div className="content">
+        <div className="content" >
           <Card title="EC2 Instance">
             <Card.Grid hoverable={false} style={gridStyle}>
               ID:123456
@@ -33,6 +33,14 @@ const ShowInstance = () => {
               Z:ghi
             </Card.Grid>
           </Card>
+          <div className="button">
+             <Button type="primary" onClick={()=>navigate('/')}>Stop</Button>
+             &nbsp;&nbsp;&nbsp;
+             
+          <Button  type="primary" onClick={()=>navigate('/')}>Reboot</Button>
+           &nbsp;&nbsp;&nbsp;
+           <Button type="primary" onClick={()=>navigate('/')}>Terminate</Button>
+           </div>
         </div>
       </div>
       <div>
